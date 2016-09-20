@@ -788,7 +788,7 @@ class MusicBot(discord.Client):
             write_file(self.config.blacklist_file, self.blacklist)
 
             return Response(
-                '%s users have been added to the blacklist' % (len(self.blacklist) - old_len),
+                '%s users have been added to the blacklist. Get fucked.' % (len(self.blacklist) - old_len),
                 reply=True, delete_after=10
             )
 
@@ -801,7 +801,7 @@ class MusicBot(discord.Client):
                 write_file(self.config.blacklist_file, self.blacklist)
 
                 return Response(
-                    '%s users have been removed from the blacklist' % (old_len - len(self.blacklist)),
+                    '%s users have been removed from the blacklist. Get unfucked.' % (old_len - len(self.blacklist)),
                     reply=True, delete_after=10
                 )
 
